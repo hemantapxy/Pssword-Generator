@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #1e293b, #0f172a);
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container Styling */
+.container {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: 380px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Title Styling */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+/* Display Container */
+.display-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    border: 2px solid #1e293b;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.display-container:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 4px 10px rgba(56, 189, 248, 0.3);
+}
+
+.display-container input {
+    border: none;
+    background: none;
+    font-size: 16px;
+    color: #ffffff;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Copy Button */
+button[data-copy] {
+    background: #38bdf8;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button[data-copy]:hover {
+    background: #0284c7;
+    transform: scale(1.1);
+}
+
+button[data-copy img] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Length Container */
+.length-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+/* Slider */
+.slider {
+    width: 100%;
+    accent-color: #38bdf8;
+    appearance: none;
+    height: 8px;
+    border-radius: 5px;
+    background: #1e293b;
+    outline: none;
+    cursor: pointer;
+}
+
+.slider:hover {
+    filter: brightness(1.2);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+label {
+    font-size: 14px;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+/* Strength Indicator */
+.strength-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.strength-container p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.strength-container div {
+    flex: 1;
+    height: 10px;
+    background: #1e293b;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.strength-container div.strong {
+    background: #4ade80;
+}
+
+.strength-container div.medium {
+    background: #facc15;
+}
+
+.strength-container div.weak {
+    background: #f87171;
+}
+
+/* Generate Button */
+.generateButtom {
+    background: #38bdf8;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.generateButtom:hover {
+    background: #0284c7;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.5);
+}
